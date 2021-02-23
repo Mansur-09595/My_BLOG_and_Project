@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <div class="grid">
+        <header>Шапка</header>
+        <article>
+            <h1>Заголовок</h1>
+            <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты.</p>
+        </article>
+        <aside>Сайдбар</aside>
+        <footer><a href="{% url 'about' %}">About</a></footer>
+    </div>
+    {% endblock content %}
+</body>
+</html>
