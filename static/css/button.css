@@ -1,0 +1,74 @@
+/* button */
+.info_text {
+	display: grid;
+}
+
+aside {
+    display: grid;
+}
+
+aside div.info_name {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 10px;
+    background-color: #181e2f;
+}
+
+.info_text div.buttons_social {
+	grid-template-columns: 50px 50px 50px;
+	grid-gap: 10px;
+    background-color: #181e2f;
+}
+
+.fab, .far {
+	border: 1px solid #000000;
+	font-size: 32px;
+	transition-duration: 0.4s;
+	background: black;
+	color: #d8d8d8;
+	padding: 3px;
+	border-radius: 9px;
+	box-sizing: border-box;
+	overflow: hidden;
+  }
+  
+  .btn:hover {
+	background-color: #b7bdb9;
+	border: 1px solid #000000;
+	color:white;
+	transform: scale(1.1);
+  }
+  
+  .fab:hover{
+	border: 1px solid #000000;
+	color:white;
+	transform: scale(1.1);
+  }
+  
+  a:hover {
+	text-decoration: none;
+  }
+  
+  .fa-vk {
+	background: #2a5885;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 2.5px;
+  }
+  
+  .fa-instagram {
+	box-sizing: border-box;
+	overflow: hidden;
+	background: #cc3dad;
+	padding: 2.4px;
+  }
+  
+  .btn {
+	background-color: white;
+	color: black;
+	box-shadow: -2px 2px 2px 2px #7f7a3e;
+	animation-name: rainbow;
+	border: 1px solid #000000;
+	/* animation-duration: 5s;
+	animation-iteration-count: infinite; */
+  }

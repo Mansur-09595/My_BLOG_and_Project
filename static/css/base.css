@@ -3,8 +3,8 @@
 	grid-gap: 20px;
 	grid-template-areas:
 		"header"
-		"article"
 		"aside"
+		"article"
 		"footer";
 }
 
@@ -12,12 +12,12 @@ header {
 	grid-area: header;
 }
 
-article {
-	grid-area: article;
-}
-
 aside {
 	grid-area: aside;
+}
+
+article {
+	grid-area: article;
 }
 
 footer {
@@ -26,6 +26,7 @@ footer {
 
 @media (min-width: 640px) {
 	.grid {
+		margin-top: 75px;
 		grid-template-columns: 2fr 4fr;
 		grid-template-areas:
 			"header header"
@@ -47,3 +48,43 @@ footer {
 .grid > *:nth-child(odd) {
 	background-color: #475477;
 }
+
+
+
+.info_text {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed; /* Set the info_text to fixed position */
+	top: 0; /* Position the info_text at the top of the page */
+	width: 100%; /* Full width */
+  }
+  
+  /* Links inside the info_text */
+  .info_text a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .info_text a:hover {
+	background: #ddd;
+	color: black;
+  }
+
+
+  /* Карусели */
+  .carousel-inner {
+	  max-width: 750px;
+	  margin: auto;
+  }
+
+  img {
+	height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+  }
