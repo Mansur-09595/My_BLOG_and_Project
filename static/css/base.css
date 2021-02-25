@@ -1,11 +1,12 @@
 .grid {
 	display: grid;
 	grid-gap: 20px;
+	margin-top: 80px;
 	grid-template-areas:
-		"header"
 		"aside"
 		"article"
-		"footer";
+		"footer"
+		"header";
 }
 
 header {
@@ -27,6 +28,7 @@ footer {
 @media (min-width: 640px) {
 	.grid {
 		margin-top: 75px;
+		margin-bottom: 10px;
 		grid-template-columns: 2fr 4fr;
 		grid-template-areas:
 			"header header"
@@ -61,7 +63,6 @@ footer {
   
   /* Links inside the info_text */
   .info_text a {
-	float: left;
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
@@ -87,4 +88,16 @@ footer {
     width: auto; 
     max-width: 300px; 
     max-height: 300px;
+	float: left;
   }
+
+.carousel, .slide, .my-5{
+	display: grid;
+	grid-gap: 20px;
+}
+
+.carousel, .slide, .my-5, .d-block .img-fluid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px
+}

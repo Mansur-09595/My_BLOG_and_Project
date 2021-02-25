@@ -15,7 +15,8 @@ aside div.info_name {
 }
 
 .info_text div.buttons_social {
-	grid-template-columns: 50px 50px 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-gap: 10px;
     background-color: #181e2f;
 }
@@ -63,7 +64,7 @@ aside div.info_name {
 	padding: 2.4px;
   }
   
-  .btn {
+.btn {
 	background-color: white;
 	color: black;
 	box-shadow: -2px 2px 2px 2px #7f7a3e;
