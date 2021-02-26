@@ -21,8 +21,8 @@
     <article>
         <p>{{post.title}}</p>
         <p>{{post.body}}</p><br>
-        <a href="#">Изменить пост</a> |
-        <a href="#">Удалить пост</a>
+        <a href="{% url 'post_edit' post.pk %}">Изменить пост</a> |
+        <a href="{% url 'post_delete' post.pk %}">Удалить пост</a>
     </article>
     <footer><a href="{% url 'home' %}">Главная</a></footer>
 </div>

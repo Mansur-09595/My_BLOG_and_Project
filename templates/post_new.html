@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+    
+
+    <div class="grid">
+        <header>Шапка</header>
+        <article>
+            <form method="post" novalidate>
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button type="submit" class="btn btn-success">Save person</button>
+              </form>
+        </article>
+        <footer><a href="{% url 'home' %}">Главная</a></footer>
+    </div>
+    <style>
+        @media (min-width: 640px) {
+            .grid {
+                grid-template-columns: 2fr 4fr;
+                grid-template-areas:
+                    "header header"
+                    "article article"
+                    "footer footer"
+            }
+        }
+    </style>
+{% endblock %}
